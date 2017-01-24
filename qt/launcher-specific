@@ -52,6 +52,7 @@ elif [ "$USE_qt5appplatform" = true ]; then
   export MIR_CLIENT_PLATFORM_PATH=$SNAP/ubuntu-app-platform/usr/lib/$ARCH/mir/client-platform
 
   export LD_LIBRARY_PATH=$SNAP/usr/lib/$ARCH:$SNAP/ubuntu-app-platform/usr/lib/$ARCH:$LD_LIBRARY_PATH
+  export LD_LIBRARY_PATH=$SNAP/ubuntu-app-platform/lib/$ARCH:$ARCH:$LD_LIBRARY_PATH
   export QT_PLUGIN_PATH=$SNAP/usr/lib/$ARCH/qt5/plugins:$SNAP/ubuntu-app-platform/usr/lib/$ARCH/qt5/plugins
   export QML2_IMPORT_PATH=$SNAP/usr/lib/$ARCH/qt5/qml:$SNAP/lib/$ARCH:$SNAP/ubuntu-app-platform/usr/lib/$ARCH/qt5/qml:$SNAP/ubuntu-app-platform/lib/$ARCH:$QML2_IMPORT_PATH
   PATH=$SNAP/ubuntu-app-platform/usr/lib/$ARCH/qt5/bin:$PATH
